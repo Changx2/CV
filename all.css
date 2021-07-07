@@ -175,12 +175,13 @@ h1 {
   border-bottom: 2px solid #000;
 }
 .title {
+  display: flex;
   font-size: 32px;
   line-height: 45px;
   margin-bottom: 8px;
   border-bottom: 1px solid #000;
 }
-.title span {
+.title h3 {
   margin-left: 16px;
   font-size: 24px;
   color: #a00404;
@@ -190,7 +191,8 @@ h1 {
   border-bottom: 1px solid #fff;
 }
 .titleWhite,
-.titleWhite span {
+.titleWhite h3 {
+  justify-content: center;
   color: #fff;
 }
 .skill {
