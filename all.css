@@ -143,9 +143,10 @@ table {
 }
 
 /* all.css */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:wght@300;400;500&display=swap");
+
 body {
-  font-family: Roboto, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang,
-    STHeiti, sans-serif, serif;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
   font-size: 24px;
   line-height: 1.5;
 }
@@ -176,12 +177,13 @@ h1 {
 }
 .title {
   display: flex;
+  align-items: center;
   font-size: 32px;
   line-height: 45px;
-  margin-bottom: 8px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #000;
 }
-.title h3 {
+.title span {
   margin-left: 16px;
   font-size: 24px;
   color: #a00404;
@@ -191,7 +193,7 @@ h1 {
   border-bottom: 1px solid #fff;
 }
 .titleWhite,
-.titleWhite h3 {
+.titleWhite span {
   justify-content: center;
   color: #fff;
 }
@@ -233,10 +235,20 @@ h1 {
 .contactList li {
   margin-bottom: 16px;
 }
+.contactList a {
+  text-decoration: none;
+  color: #fff;
+}
+.contactList a:hover {
+  opacity: 0.3;
+}
 .link {
   display: flex;
   justify-content: center;
 }
-.link a {
+.link li {
   margin-right: 24px;
+}
+.link img:hover {
+  opacity: 0.3;
 }
